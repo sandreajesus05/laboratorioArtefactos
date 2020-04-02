@@ -1,14 +1,14 @@
 server:
- port: 8787
+  port: 8787
 eureka:
- instance:
-  hostname: localhost
-  health-check-url-path: /actuator/health
-  status-page-url-path: /actuator/info
- client:
-  registerWithEureka: false
-  fetchRegistry: false
+  instance:
+    hostname: localhost
+    health-check-url-path: /actuator/health
+    status-page-url-path: /actuator/info
+    client:
+      registerWithEureka: false
+      fetchRegistry: false
 logging:
- level:
-  com.netflix.discovery: 'ON'
-  org.springframework.cloud: 'DEBUG'
+  level:
+    com.netflix.discovery: 'ON'
+    org.springframework.cloud: 'DEBUG'
