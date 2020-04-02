@@ -5,9 +5,11 @@ eureka:
     hostname: localhost
     health-check-url-path: /actuator/health
     status-page-url-path: /actuator/info
-    client:
-      registerWithEureka: false
-      fetchRegistry: false
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+    service-url:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
 logging:
   level:
     com.netflix.discovery: 'ON'
