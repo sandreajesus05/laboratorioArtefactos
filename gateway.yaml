@@ -4,5 +4,3 @@ eureka:
   client:
     serviceUrl:
       defaultZone: http://localhost:8787/eureka/
-logging:
-  level: debug
