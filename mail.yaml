@@ -10,7 +10,14 @@ spring:
   sleuth:
     annotation:
       enabled: true
-      
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8787/eureka/
+  instance:
+    statusPageUrlPath: /actuator/info
+    healthCheckUrlPath: /actuator/health
+    instanceId: ${spring.application.name}:${spring.application.instance_id:${random.value}}      
 management:
   security:
     enabled: false
