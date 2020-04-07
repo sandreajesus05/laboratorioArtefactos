@@ -27,8 +27,8 @@ management:
       allowed-methods: GET,POST
 
 sendgrid:
-  apikey: ${SENDGRID_APIKEY}
-  url: ${SENDGRID_URL}
+  apikey: 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
+  url: 7PQ75Wu0RRWOo9nkE2UMOA
 
 mail:
   queue: send-mail-request
